@@ -18,7 +18,7 @@ class SupplementInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = supplement?.title
-        contentLabel.text = supplement?.content
+        contentLabel.text = supplement?.description
     }
     
 }

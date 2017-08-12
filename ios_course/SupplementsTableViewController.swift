@@ -10,18 +10,18 @@ import UIKit
 
 class SupplementsTableViewController: UITableViewController {
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        if SupplementsCache.supplements.count != tableView.numberOfRows(inSection: 1){
-            tableView.reloadData()
-        }
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        if Cache.supplements.count != tableView.numberOfRows(inSection: 1){
+//            tableView.reloadData()
+//        }
+//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Show Supplement Info"{
             let indexPath = sender as! IndexPath
             let destinationViewController = segue.destination as! SupplementInfoViewController
-            destinationViewController.supplement = SupplementsCache.supplements[indexPath.row]
+            destinationViewController.supplement = Cache.supplements[indexPath.row]
         }
     }
 
@@ -32,12 +32,12 @@ class SupplementsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return SupplementsCache.supplements.count
+        return Cache.supplements.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Supplement Cell") as! SupplementTableViewCell
-        cell.titleLabel.text = SupplementsCache.supplements[indexPath.row].title
+        cell.titleLabel.text = Cache.supplements[indexPath.row].title
         return cell
     }
     

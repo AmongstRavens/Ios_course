@@ -9,16 +9,22 @@
 import UIKit
 
 class AddSupplementViewController: UIViewController {
-    var supplement : Supplement?
+    var supplement : Supplement?{
+        didSet{
+            Cache.supplements.append(supplement!)
+            let controllersCount = self.navigationController?.viewControllers.count
+            if let tableVC = self.navigationController?.viewControllers[controllersCount! - 2] as? SupplementsTableViewController{
+                tableVC.tableView.reloadData()
+            }
+        }
+    }
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentTextField: UITextField!
     
     
     @IBAction func AddSupplement(_ sender: UIButton) {
-        supplement = Supplement(title: titleTextField.text, content: contentTextField.text)
-        SupplementsCache.supplements.append(supplement!)
-        print(SupplementsCache.supplements.count)
+        supplement = Supplement(title: titleTextField.text!, description: contentTextField.text!, lecture: nil, timeStamp : nil)
     }
     
 }

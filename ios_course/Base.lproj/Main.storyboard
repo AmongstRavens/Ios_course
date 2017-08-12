@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uzK-az-JfM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7UZ-qF-GZc">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -57,7 +57,61 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFM-ij-zGp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="262.5" y="146.83098591549296"/>
+            <point key="canvasLocation" x="1260" y="-617"/>
+        </scene>
+        <!--Homeworks View Controller-->
+        <scene sceneID="Ogr-tt-SZu">
+            <objects>
+                <viewController id="sEG-Ya-0Qu" customClass="HomeworksViewController" customModule="ios_course" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4YQ-fT-br6"/>
+                        <viewControllerLayoutGuide type="bottom" id="YaU-hX-dlU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2AM-P0-Msi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qjl-zq-Cdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="921"/>
+        </scene>
+        <!--Lessons View Controller-->
+        <scene sceneID="rpU-At-Suz">
+            <objects>
+                <viewController id="omK-u4-7VE" customClass="LessonsViewController" customModule="ios_course" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WXv-kO-pOW"/>
+                        <viewControllerLayoutGuide type="bottom" id="gVA-nM-EWv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lEI-bb-qtn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dmu-H6-mi0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="1687"/>
+        </scene>
+        <!--Lectures View Controller-->
+        <scene sceneID="Cun-k0-Q0j">
+            <objects>
+                <viewController id="LLc-Nw-6aT" customClass="LecturesViewController" customModule="ios_course" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="utg-JQ-gs0"/>
+                        <viewControllerLayoutGuide type="bottom" id="y9H-ax-eOw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yIP-oV-wXj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GyM-qc-dB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="147"/>
         </scene>
         <!--Supplement Info View Controller-->
         <scene sceneID="LQK-wz-WIh">
@@ -95,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZ3-0h-GAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1215" y="-664.43661971830988"/>
+            <point key="canvasLocation" x="2213" y="-616"/>
         </scene>
         <!--Add Supplement View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -141,25 +195,78 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1215" y="146.83098591549296"/>
+            <point key="canvasLocation" x="2213" y="-1455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ehc-ra-B2z">
+            <objects>
+                <viewController id="9cn-hu-LyN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hq9-qe-1ne"/>
+                        <viewControllerLayoutGuide type="bottom" id="rLp-yT-bSo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W0W-j3-WjU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFp-gU-ZkV">
+                                <rect key="frame" x="94" y="133" width="133" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Лекции"/>
+                                <connections>
+                                    <segue destination="LLc-Nw-6aT" kind="show" identifier="Show Lectures" id="H3S-Ir-k3m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQw-aP-eeY">
+                                <rect key="frame" x="94" y="201" width="133" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Семинары"/>
+                                <connections>
+                                    <segue destination="omK-u4-7VE" kind="show" identifier="Show Lectures" id="XsM-jH-5Wl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0I-uu-KLc">
+                                <rect key="frame" x="94" y="267" width="133" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Домашние работы"/>
+                                <connections>
+                                    <segue destination="sEG-Ya-0Qu" kind="show" identifier="Show Homeworks" id="9aJ-zR-AxP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEd-Ks-WwG">
+                                <rect key="frame" x="94" y="327" width="133" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Доп. материалы"/>
+                                <connections>
+                                    <segue destination="wM3-Tr-mAQ" kind="show" identifier="Show Supplements" id="tus-AC-x1n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rZS-mE-XPT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GjG-gW-4aV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="147"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="b4O-2h-dIb">
+        <scene sceneID="Vhu-hg-jYK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uzK-az-JfM" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7UZ-qF-GZc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E6e-W8-Pkv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HDU-jv-WzP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="wM3-Tr-mAQ" kind="relationship" relationship="rootViewController" id="XXG-Un-iZ9"/>
+                        <segue destination="9cn-hu-LyN" kind="relationship" relationship="rootViewController" id="ElA-zb-BGP"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qgA-3o-Uiu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vlM-oM-Vaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-735" y="146.83098591549296"/>
+            <point key="canvasLocation" x="-1320" y="147"/>
         </scene>
     </scenes>
 </document>
