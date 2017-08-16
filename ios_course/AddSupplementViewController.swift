@@ -8,7 +8,8 @@
 
 import UIKit
 
-class AddSupplementViewController: UIViewController {
+class AddSupplementViewController: UIViewController{
+    
     var supplement : Supplement?{
         didSet{
             Cache.supplements.append(supplement!)
@@ -20,11 +21,12 @@ class AddSupplementViewController: UIViewController {
     }
     
     @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var contentTextField: UITextField!
+    @IBOutlet weak var contentTextView: UITextView!
     
     
     @IBAction func AddSupplement(_ sender: UIButton) {
-        supplement = Supplement(title: titleTextField.text!, description: contentTextField.text!, lecture: nil, timeStamp : nil)
+        supplement = Supplement(title: titleTextField.text!, content: contentTextView.text!)
+        navigationController?.popViewController(animated: true)
     }
     
 }

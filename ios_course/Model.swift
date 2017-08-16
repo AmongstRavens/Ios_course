@@ -16,53 +16,38 @@ struct Cache{
     static var lessons = [Lesson]()
 }
 
-class StudyingEntities{
+class Supplement{
     var title : String
-    var description : String
-    var images = [UIImage]()
-    var timeStamp : Date?
-
-    
-    init(title : String, description : String, timeStamp : Date?){
-        self.timeStamp = timeStamp
-        self.description = description
+    var content : String
+    init(title : String, content: String) {
         self.title = title
-    }
-
-}
-
-
-class Supplement : StudyingEntities{
-    var lecture : Lecture?
-    init(title : String, description: String, lecture : Lecture?, timeStamp : Date?) {
-        self.lecture = lecture
-        super.init(title : title, description : description, timeStamp : timeStamp)
+        self.content = content
     }
     
 }
 
-class Lecture : StudyingEntities{
-    var teacher : String
-    init(title : String, description: String, teacher : String, timeStamp : Date?) {
-        self.teacher = teacher
-        super.init(title : title, description : description, timeStamp : timeStamp)
+class Lecture{
+    var image : UIImage
+    var description : String
+    init(image : UIImage, description: String){
+        self.image = image
+        self.description = description
     }
     
 }
 
-class Homework : StudyingEntities{
-    var owner : String
-    init(title : String, description: String, owner : String, timeStamp : Date?) {
-        self.owner = owner
-        super.init(title : title, description : description, timeStamp : timeStamp)
+class Homework{
+    var date : Date?
+    var image : UIImage
+    init(image : UIImage, date : Date?){
+        self.date = date
+        self.image = image
     }
-    
 }
 
-class Lesson : StudyingEntities{
-    var teacher : String
-    init(title : String, description: String, teacher : String, timeStamp : Date?) {
-        self.teacher = teacher
-        super.init(title : title, description : description, timeStamp : timeStamp)
+class Lesson{
+    var image : UIImage
+    init(image : UIImage){
+        self.image = image
     }
 }
